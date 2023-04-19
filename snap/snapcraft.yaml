@@ -22,7 +22,7 @@ apps:
       - home
 
 parts:
-  jira-cli:
+  beebasm:
     plugin: cmake
     source-type: git
     source: https://github.com/stardot/beebasm
