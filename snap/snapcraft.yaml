@@ -24,6 +24,8 @@ apps:
 parts:
   beebasm:
     plugin: cmake
+    cmake-parameters:
+      - -DCMAKE_INSTALL_PREFIX=/usr
     source-type: git
     source: https://github.com/stardot/beebasm
     source-tag: v1.10
