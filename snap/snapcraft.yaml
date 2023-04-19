@@ -1,0 +1,29 @@
+name: beebasm
+base: core22
+version: git
+summary: A portable 6502 assembler with BBC Micro style syntax
+description: |
+    BeebAsm is a 6502 assembler designed specially for developing assembler
+    programs for the BBC Micro. It uses syntax reminiscent of BBC BASIC's
+    built-in assembler, and is able to output its object code directly into
+    emulator-ready DFS disc images.
+grade: stable
+license: GPL-3.0
+issues: https://github.com/stardot/beebasm/issues
+source-code: https://github.com/davel/beebasm-snap
+website: https://github.com/stardot/beebasm
+contact: https://dave.lambley.me.uk/
+confinement: strict
+
+apps:
+  beebasm:
+    command: bin/beebasm
+    plugs:
+      - home
+
+parts:
+  jira-cli:
+    plugin: cmake
+    source-type: git
+    source: https://github.com/stardot/beebasm
+    source-tag: v1.10
