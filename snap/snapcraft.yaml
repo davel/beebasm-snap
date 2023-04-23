@@ -17,7 +17,7 @@ confinement: strict
 
 apps:
   beebasm:
-    command: bin/beebasm
+    command: usr/bin/beebasm
     plugs:
       - home
 
